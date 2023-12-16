@@ -1,0 +1,534 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+}
+/*
+@font-face {
+    font-family: "main";
+    src: url(fonts/main.ttf);
+}
+@font-face {
+    font-family: "titles";
+    src: url(fonts/titles.ttf);
+}
+*/
+.navbar nav{
+    display: flex;
+    justify-content: center;
+}
+nav img{
+    margin-top: 15px;
+    width: 65px;
+    height: auto;
+}
+.toptext{
+    margin-top: 30px;
+}
+.toptext a{
+    color: black;
+    font-weight: bold;
+    margin: 30px;
+    transition: 0.2s;
+    font-size: 20px;
+}
+.toptext a:hover{
+    border-bottom: 3px solid red;
+    transition: 0.2s;
+}
+.toptext .active{
+    border-bottom: 3px solid rgb(255, 0, 0);
+}
+.mmenu{
+    display: none;
+}
+.image-container {
+    position: relative;
+    top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.image-container:hover{
+    cursor: pointer;
+}
+#image1,#image2,#image3 {
+    position: absolute;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    width: 1300px;
+    border-radius: 20px;
+    transition: opacity 2s linear; 
+    opacity: 0;
+    z-index: 1; 
+}
+
+.image-text {
+    position: absolute;
+    font-size: 30px;
+    margin-top: 450px;
+    color: white;
+    padding: 5px;
+    transition: opacity 2s linear; 
+    opacity: 0; 
+    z-index: 2; 
+}
+.image-text h2{
+    color: aliceblue;
+    font-size: 20px;
+}
+.image-text p{
+    font-size: 25px;
+    max-width: 1000px;
+    margin-top: 30px;
+}
+.image-container button{
+    margin: 1vh auto;
+    border: none;
+    padding: 10px 30px;
+    font-size: 30px;
+    border-radius: 20px;
+}
+.arrow{
+    display:none;
+}
+.aboutus{
+    margin: auto;
+    width:  1300px;
+    margin-top: 1000px;
+    padding-bottom: 200px;
+}
+.aboutus h1{
+    font-size: 50px;
+    border-bottom: 7px solid rgb(255, 57, 57);
+}
+.aboutus h2{
+    margin-top: 10px;
+    font-size: 25px;
+    text-align: justify;
+}
+.number{
+    font: 800 40px system-ui;
+  }
+.stats{
+    margin: auto;
+    width:  1300px;
+    padding-bottom: 100px;
+}
+.stats h1{
+    font-size: 50px;
+    border-bottom: 7px solid rgb(255, 57, 57);
+}
+.stats h1 span{
+    position: relative;
+    top: -7px;
+    color: aliceblue;
+    font-size: 20px;
+    background-color: rgb(255, 0, 0);
+    padding: 8px 10px 8px 5px;
+    border-radius: 20px
+}
+.stats h1 i{
+    font-size: 20px;
+    color: red;
+    padding: 5px 13px;
+    border-radius: 100%;
+    background-color: aliceblue;
+
+}
+.stats .counts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.stats .counts div{
+
+    list-style: none;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    height: 200px;
+    width: 200px;
+    margin: 50px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    border: solid 10px  red
+}
+.stats div h1{
+    margin-top: 10px;
+    text-decoration: none;
+    display: block;
+    border: none;
+    font-size: 20px;
+}
+.stats div h2{
+    display: block;
+    font-size: 35px;
+}
+.new{
+    margin: auto;
+    width:  1300px;
+    padding-bottom: 100px;
+}
+.new h1{
+    font-size: 50px;
+    border-bottom: 7px solid rgb(255, 57, 57);
+}
+.moduls{
+    display: flex;
+    width: 1320px;
+    flex-wrap: wrap;
+}
+.squaimg img{
+    height: 460px;
+    width: 460px;
+}
+.rectimg img{
+    height: 460px;
+    width: 820px;
+}
+.news{
+    font-family: titles;
+    transition: 0.4s;
+    width: auto;
+    margin: 8px 5px;
+}
+.newb{
+    position: relative;
+    top: -70px;
+}
+.bottext{
+    top: -100px;
+    position: relative;
+    color: #fff;
+    left: 30px;
+}
+.bottext h1{
+    border: none;
+    font-size: 35px;
+}
+.bottom{
+    background: linear-gradient(45deg , #d52a1c,#0d3a54 );
+    color: aliceblue;
+    padding-bottom: 30px;
+}
+.bottom .mbot{
+    padding-top: 70px;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 50px;
+}
+.bottom .infos{
+    width: 400px;
+    margin-right: 800px;
+}
+.bottom .infos h1{
+    border-bottom: 4px solid aliceblue;
+}
+.bottom .infos h2{
+    font-size: 20px;
+    margin: 10px 0;
+}
+.bottom .infos i{
+    padding-right: 10px;
+}
+.bottom .social{
+    font-size: 50px;
+}
+.bottom .social i{
+    text-decoration: none;
+    color: aliceblue;
+}
+.bottom p{
+    text-align: center;
+    padding: 10px 0;
+}
+@media (min-width: 1100px){
+    .news:hover{
+       cursor: pointer;
+       scale: 0.9;
+       transition: 0.4s;
+    }
+}
+@media (max-width: 1600px) {
+    .toptext a{
+        margin: 20px;
+    }
+    #image1,#image2,#image3 {
+        width: 1200px;
+    }
+    .image-text {
+        margin-top: 400px;
+    }
+    .aboutus{
+        width:  1200px;
+    }
+    .stats{
+        width:  1200px;
+    }
+    .new{
+        width:  1200px;
+    }
+    .squaimg img{
+        height: 440px;
+        width: 440px;
+    }
+    .rectimg img{
+        height: 440px;
+        width: 730px;
+    }
+    .news{
+        margin: 8px 7px;
+    }
+    .bottom .infos{
+        margin-right: 630px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .navbar .toptext{
+        display: none;
+    }
+    .navbar img{
+        width: 45px;
+        height: 35px;
+    }
+    .mmenu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        position: absolute;
+        top: 10px;
+        left: 15px;
+    }
+    
+    .menu-button {
+        cursor: pointer;
+    }
+    
+    .bar {
+        width: 25px;
+        height: 3px;
+        background-color: #000000;
+        margin: 4px 0;
+        transition: 0.4s;
+        z-index: 1;
+    }
+    
+    .menu {
+        display: none;
+        transition: display 1s;
+
+    }
+    
+    .menu.active {
+        display: block;
+        position: absolute;
+        z-index: 2;
+        background-color: #fff;
+        left: 15px;
+        top: 40px;
+        transition: 1s;
+        border-radius: 10px;
+    }
+    
+    .menu ul {
+        list-style: none;
+        padding: 0;
+        width: 150px;
+        border: 1px solid gray;
+        transition: 1s;
+        border-radius: 10px;
+    }
+    
+    .menu li {
+        margin: 15px 0;
+        text-align: center;
+        transition: 1s;
+    }
+    
+    .menu a {
+        text-decoration: none;
+        color: #000000;
+        font-size: 18px;
+    }
+    .menu .mactive{
+        border-bottom: 3px solid red;
+    }
+    .image-container{
+        margin-top: 6vh;
+        width: 90%; 
+        height: 550px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 30px;
+        margin: auto;
+      }
+    #image1,#image2,#image3{
+        box-shadow: none;
+      }
+    .image-text{
+        position: absolute;
+        left: 50%;
+        transform: translateX( -50%);
+        top: -250px;
+        width: 70vw;
+      }
+    .image-text h1{
+        position: relative;
+        top: 20vh;
+        font-size: 25px;
+    }
+    .image-text h2{
+        position: relative;
+        top: 20vh;
+        font-size: 15px;
+    }
+    .image-text p{
+        position: relative;
+        top: 20vh;
+        font-size: 15px;
+    }
+    .arrow{
+        position: relative;
+        display: block;
+        text-align: center;
+        top: 15vh;
+    }
+    .arrow i{
+        font-size: 40px;
+    }
+    .aboutus{
+        margin-top: 200px;
+        width:  90%;
+        padding-bottom: 100px;
+    }
+    .aboutus h1{
+        font-size: 30px;
+        border-bottom: 4px solid red;
+    }
+    .aboutus h2{
+        font-size: 16px;
+    }
+    .stats{
+        width: 90%;
+    }
+    .stats h1{
+        font-size: 30px;
+        border-bottom: 4px solid red;
+    }
+    .stats h1 span{
+        top: -4px;
+        font-size: 15px;
+        background-color: red;
+        padding: 5px 6px 5px 2px;
+        border-radius: 20px
+    }
+    .stats h1 i{
+        font-size: 15px;
+        padding: 4px 9px;
+    }
+    .stats .counts{
+        display: block;
+    }
+    .stats .counts div{
+        height: 150px;
+        width: 150px;
+        border: solid 6px  red;
+        margin: 30px auto;
+    }
+    .stats div h1{
+        font-size: 17px;
+    }
+    .stats div h2{
+        font-size: 23px;
+    }
+    .new{
+        margin: auto;
+        width:  90%;
+        padding-bottom: 100px;
+    }
+    .new h1{
+        font-size: 30px;
+        border-bottom: 4px solid red;
+    }
+    .moduls{
+        display: block;
+        width: 330px;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+    .squaimg{
+        width: 330px;
+        height: 350px; 
+        overflow: hidden;
+        border-radius: 10px;
+    }
+    .rectimg{
+        width: 330px;
+        height: 350px; 
+        overflow: hidden;
+        border-radius: 10px;
+    }
+    .newb{
+        position: relative;
+        top: 0;
+    }
+    .newm1{
+        position: relative;
+        top: -40px;
+    }
+    .newm2{
+        position: relative;
+        top: -80px;
+    }
+    .newm3{
+        position: relative;
+        top: -145px;
+    }
+    .news{
+        margin: 10px 0px;
+    }
+    .bottext{
+        position: relative;
+        color: #fff;
+        left: 40px;
+        width: 300px;
+    }
+    .bottext h1{
+        border: none;
+        font-size: 25px;
+    }
+
+     .bottom .mbot{
+        display: block;
+        margin: auto;
+     }
+     .bottom .infos{
+        width: 250px;
+        margin-left: 6vw;
+    }
+    .bottom .infos h1{
+        font-size: 25px;
+        border-bottom: 3px solid aliceblue;
+    }
+    .bottom .infos h2{
+        font-size: 15px;
+    }
+    .bottom .infos i{
+        padding-right: 5px;
+        font-size: 15px;
+    }
+    .bottom .social{
+       text-align: center;
+       font-size: 40px;
+       padding: 20px 0;
+    }
+    .bottom p{
+        font-size: 12px;
+    }
+    
+}
+  
