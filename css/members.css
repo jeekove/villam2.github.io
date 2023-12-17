@@ -1,0 +1,310 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+}
+/*
+@font-face {
+    font-family: "main";
+    src: url(fonts/main.ttf);
+}
+@font-face {
+    font-family: "titles";
+    src: url(fonts/titles.ttf);
+}
+*/
+.navbar nav{
+    display: flex;
+    justify-content: center;
+}
+nav img{
+    margin-top: 15px;
+    width: 65px;
+    height: auto;
+}
+.toptext{
+    margin-top: 30px;
+}
+.toptext a{
+    color: black;
+    font-weight: bold;
+    margin: 30px;
+    transition: 0.2s;
+    font-size: 20px;
+}
+.toptext a:hover{
+    border-bottom: 3px solid red;
+    transition: 0.2s;
+}
+.toptext .active{
+    border-bottom: 3px solid rgb(255, 0, 0);
+}
+.mmenu{
+    display: none;
+}
+.members{
+    margin: auto;
+    width:  1300px;
+    margin-top: 80px;
+}
+.members h1{
+    margin-bottom: 50px;
+    font-size: 50px;
+    border-bottom: 7px solid rgb(255, 57, 57);
+}
+.members h1 span{
+    position: relative;
+    top: -7px;
+    color: aliceblue;
+    font-size: 20px;
+    background-color: rgb(255, 0, 0);
+    padding: 8px 10px 8px 5px;
+    border-radius: 20px
+}
+.members h1 i{
+    font-size: 20px;
+    color: red;
+    padding: 5px 13px;
+    border-radius: 100%;
+    background-color: aliceblue;
+}
+.memberscubes{
+   display: flex;
+   flex-wrap: wrap;
+   width: 1300px;
+   justify-content: space-between;
+}
+.memberscube{
+    margin: auto;
+    margin: 50px 60px;
+    width: 300px;
+    text-align: center;
+}
+.memberscube img{
+    width: 200px;
+    height: 200px;
+    padding: 4px;
+    border: 4px solid red;
+    border-radius: 100%;
+}
+.memberscube h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+    border: none;
+    background: linear-gradient(45deg , #d52a1c,#0a2c75 );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.memberscube h1 span{
+    font-size: 53px;
+    background: linear-gradient(45deg , #ff1500,#0051ff );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.memberscube h2{
+    font-size: 25px;
+    margin: 5px auto;
+}
+.memberscube h4{
+    margin-top: 20px;
+}
+.bottom{
+    background: linear-gradient(45deg , #d52a1c,#0d3a54 );
+    color: aliceblue;
+    padding-bottom: 30px;
+}
+.bottom .mbot{
+    padding-top: 70px;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 50px;
+}
+.bottom .infos{
+    width: 400px;
+    margin-right: 800px;
+}
+.bottom .infos h1{
+    border-bottom: 4px solid aliceblue;
+}
+.bottom .infos h2{
+    font-size: 20px;
+    margin: 10px 0;
+}
+.bottom .infos i{
+    padding-right: 10px;
+}
+.bottom .social{
+    font-size: 50px;
+}
+.bottom .social i{
+    text-decoration: none;
+    color: aliceblue;
+}
+.bottom p{
+    text-align: center;
+    padding: 10px 0;
+}
+@media (max-width: 1600px) {
+    .toptext a{
+        margin: 20px;
+    }
+    .members{
+        width: 80%;
+    }
+    .memberscubes{
+        width: auto;
+       justify-content: center;
+    }
+    .bottom .infos{
+        margin-right: 630px;
+    }
+}
+@media (max-width: 900px) {
+    .navbar .toptext{
+        display: none;
+    }
+    .navbar img{
+        width: 45px;
+        height: 35px;
+    }
+    .mmenu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        position: absolute;
+        top: 10px;
+        left: 15px;
+    }
+    
+    .menu-button {
+        cursor: pointer;
+    }
+    
+    .bar {
+        width: 25px;
+        height: 3px;
+        background-color: #000000;
+        margin: 4px 0;
+        transition: 0.4s;
+        z-index: 1;
+    }
+    
+    .menu {
+        display: none;
+        transition: display 1s;
+
+    }
+    
+    .menu.active {
+        display: block;
+        position: absolute;
+        z-index: 2;
+        background-color: #fff;
+        left: 15px;
+        top: 40px;
+        transition: 1s;
+        border-radius: 10px;
+    }
+    
+    .menu ul {
+        list-style: none;
+        padding: 0;
+        width: 150px;
+        border: 1px solid gray;
+        transition: 1s;
+        border-radius: 10px;
+    }
+    
+    .menu li {
+        margin: 15px 0;
+        text-align: center;
+        transition: 1s;
+    }
+    
+    .menu a {
+        text-decoration: none;
+        color: #000000;
+        font-size: 18px;
+    }
+    .menu .mactive{
+        border-bottom: 3px solid red;
+    }
+    .members{
+        width: 90%;
+        margin-bottom: 100px;
+    }
+    .members h1{
+        font-size: 30px;
+        border-bottom: 4px solid red;
+    }
+    .members h1 span{
+        top: -4px;
+        font-size: 15px;
+        background-color: red;
+        padding: 5px 6px 5px 2px;
+        border-radius: 20px
+    }
+    .members h1 i{
+        font-size: 15px;
+        padding: 4px 9px;
+    }
+    .memberscubes{
+        display: block;
+        width: 90%;
+        margin: auto;
+    }
+    .memberscube{
+        margin: 50px 0;
+        width: auto;
+    }
+    .memberscube img{
+        width: 150px;
+        height: 150px;
+    }
+    .memberscube h1{
+        margin-bottom: 10px;
+        font-size: 30px;
+        border: none;
+    }
+    .memberscube h1 span{
+        font-size: 45px;
+        background: linear-gradient(45deg , #ff1500,#0051ff );
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+    .memberscube h2{
+        font-size: 20px;
+    }
+    .memberscube h3{
+        font-size: 17px;
+    }
+    .bottom .mbot{
+        display: block;
+        margin: auto;
+     }
+     .bottom .infos{
+        width: 250px;
+        margin-left: 6vw;
+    }
+    .bottom .infos h1{
+        font-size: 25px;
+        border-bottom: 3px solid aliceblue;
+    }
+    .bottom .infos h2{
+        font-size: 15px;
+    }
+    .bottom .infos i{
+        padding-right: 5px;
+        font-size: 15px;
+    }
+    .bottom .social{
+       text-align: center;
+       font-size: 40px;
+       padding: 20px 0;
+    }
+    .bottom p{
+        font-size: 12px;
+    } 
+}
