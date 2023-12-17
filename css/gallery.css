@@ -2,120 +2,73 @@
     padding: 0;
     margin: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
 }
 /*
 @font-face {
     font-family: "main";
-    src: url(/fonts/main.ttf);
+    src: url(fonts/main.ttf);
 }
 @font-face {
     font-family: "titles";
-    src: url(/fonts/titles.ttf);
+    src: url(fonts/titles.ttf);
 }
 */
 .navbar nav{
     display: flex;
     justify-content: center;
 }
-nav{
-    background-color: white;
-    width: 1000px;
-    margin: 30px auto;
-    border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
 nav img{
+    margin-top: 15px;
     width: 65px;
     height: auto;
-    margin: 5px auto;
 }
 .toptext{
-    margin-top: 23px;
+    margin-top: 30px;
 }
 .toptext a{
-    margin: 30px;
+    color: black;
     font-weight: bold;
+    margin: 30px;
     transition: 0.2s;
     font-size: 20px;
-    text-decoration: none;
-    color: black;
 }
 .toptext a:hover{
-    color: red;
+    border-bottom: 3px solid red;
+    transition: 0.2s;
 }
 .toptext .active{
-    border-bottom: 4px solid rgb(161, 0, 0);
+    border-bottom: 3px solid rgb(255, 0, 0);
 }
-
 .mmenu{
     display: none;
 }
-.mobilimg img{
-    display: none;
-}
-.imgtitle .img{
-    position:  relative;
-    top: -200px;
-    width: 70%;
-    margin:  auto;
-    z-index: -1;
-}
-.imgtitle img{
-    width: 100%;
-    height: 800px;
-    object-fit: cover;
-    border-bottom-right-radius: 30px;
-    border-bottom-left-radius: 30px;
-}
-.imgtitle .text{
-    margin: -350px auto 0 auto;
-    width: 1100px;
-    color: #fff;
-}
-.imgtitle .text h1{
-    font-size: 70px;
-}
-.imgtitle .text h2{
-    padding-top: 10px;
-    font-size: 30px;
-}
-.content{
-    padding-top: 100px;
-    width: 1090px;
-    margin: 3vh auto;
-}
-.content h1{
-    font-size: 50px;
-    border-bottom: 7px solid rgb(255, 57, 57);
-}
-.content h3{
-    padding-top: 20px;
-    text-align: justify;
-    font-size: 25px;
-}
-.content h4{
-    font-size: 25px;
-    color: #d52a1c;
-}
-.galery h1{
-    margin: 3vh auto;
-}
-.photos{
-    margin-top: 6vh;
-}
-.galery{
+.gallery{
     margin: auto;
-    width: 1090px;
+    width: 1300px;
+}
+.gallerycube{
+    margin-top: 100px;
+}
+.gallerycube h1{
+    font-size: 40px;
+    border-bottom: 4px solid rgb(255, 57, 57);
+    margin-bottom: 20px;
+}
+.gallerycube .photos{
+    margin: auto;
+    width: 1300px;
     padding-bottom: 200px;
 }
 .thumbnail {
     border-radius: 10px;
-    width: 360px; 
-    height: 360px; 
+    width: 420px; 
+    height: 420px; 
     display: inline-block;
     object-fit: cover;
     cursor: pointer;
     transition: 0.2s;
+    margin: 5px;
 }
 .thumbnail:hover{
     scale: 0.9;
@@ -143,6 +96,7 @@ nav img{
     border-radius: 20px;
     border: 3px solid red;
     padding: 3px;
+    margin-bottom: 70px;
   }
 
   .close {
@@ -177,7 +131,7 @@ nav img{
     margin-bottom: 50px;
 }
 .bottom .infos{
-    width: 500px;
+    width: 400px;
     margin-right: 800px;
 }
 .bottom .infos h1{
@@ -196,64 +150,18 @@ nav img{
 .bottom .social i{
     text-decoration: none;
     color: aliceblue;
-    transition: 0.3s;
-}
-.bottom .social i:hover{
-    color: rgb(151, 0, 0);
-    transition: 0.3s;
 }
 .bottom p{
     text-align: center;
     padding: 10px 0;
 }
-
-
-@media (max-width: 1600px) {
-    .toptext a{
-        margin: 20px;
-    }
-    nav{
-        width: 900px;
-    }
-    .content{
-        width: 900px;
-    }
-    .galery{
-        width: 900px;
-    }
-    .modal-content{
-        width: 50%;
-    }
-    .bottom .infos{
-        margin-right: 630px;
-    }
-    .imgtitle .img{
-        width: 80%;
-    }
-    .imgtitle .text{
-        width: 900px;
-    }
-    .thumbnail {
-        max-width: 445px; 
-        height: 445px; 
-}
-}
 @media (max-width: 1200px){
-    nav{
-        width: 350px;
-        background: none;
-        box-shadow: none;
-    }
-    nav img{
-        
-        filter: drop-shadow(0px 0px 0.75rem rgb(255, 0, 0));
-    }
     .navbar .toptext{
         display: none;
     }
     .navbar img{
-        width: 54px;
-        height: 45px;
+        width: 45px;
+        height: 35px;
     }
     .mmenu {
         display: flex;
@@ -261,17 +169,12 @@ nav img{
         align-items: center;
         padding: 10px 20px;
         position: absolute;
-        top: 22px;
-        left: 4vh;
+        top: 10px;
+        left: 15px;
     }
+    
     .menu-button {
-        position: relative;
-        left: -5px;
         cursor: pointer;
-        background-color: #fff;
-        padding: 10px 10px;
-        border-radius: 30px;
-        border: 1px solid gray;
     }
     
     .bar {
@@ -280,13 +183,13 @@ nav img{
         background-color: #000000;
         margin: 4px 0;
         transition: 0.4s;
-        z-index: 3;
+        z-index: 1;
     }
     
     .menu {
         display: none;
         transition: display 1s;
-        margin-top: 20px;
+
     }
     
     .menu.active {
@@ -323,48 +226,25 @@ nav img{
     .menu .mactive{
         border-bottom: 3px solid red;
     }
-    .imgtitle .img{
-        top: -150px;
+    .gallery{
+        margin: auto;
         width: 90%;
     }
-    .imgtitle img{
-        height: 600px;
-    }
-    .imgtitle .text{
-        margin: -300px auto 100px auto;
-        width:  350px;
-        color: #ffffff;
-    }
-    .imgtitle .text h1{
-        margin-left: 25px;
-        font-size: 35px;
-    }
-    .imgtitle .text h2{
-        padding-top: 5px;
-        margin-left: 25px;
-        font-size: 20px;
-    }
-    .content{
-        padding-top: 100px;
-        width: 350px;
-    }
-    .content h1{
+    .gallerycube h1{
         font-size: 30px;
-        border-bottom: 4px solid rgb(255, 57, 57);
+        border-bottom: 4px solid red
     }
-    .content h3{
-        padding-top: 20px;
-        text-align: justify;
+    .gallerycube h1 span{
         font-size: 20px;
     }
-    .galery{
-        margin: auto;
-        width: 350px;
-        padding-bottom: 200px;
+    .gallerycube .photos{
+            margin: auto;
+            width: 320px;
+            padding-bottom: 200px;
     }
     .thumbnail {
         border-radius: 10px;
-        width: 350px; 
+        width: 320px; 
         height: 350px; 
     }
     .modal {

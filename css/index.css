@@ -208,6 +208,20 @@ nav img{
     border: none;
     font-size: 35px;
 }
+.contbutton{
+    position: relative;
+    top: -40px;
+    margin: auto;
+}
+.contbutton a h1{
+    text-align: center;
+    border: none;
+    color: white;
+    font-size: 30px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background: linear-gradient(45deg , #d52a1c,#0d3a54 );
+}
 .bottom{
     background: linear-gradient(45deg , #d52a1c,#0d3a54 );
     color: aliceblue;
@@ -501,7 +515,18 @@ nav img{
         border: none;
         font-size: 25px;
     }
-
+    .contbutton{
+        position: relative;
+        top: -100px;
+        margin: auto;
+    }
+    .contbutton a h1{
+        text-align: center;
+        border: none;
+        color: white;
+        font-size: 25px;
+        padding: 10px 15px;
+    }
      .bottom .mbot{
         display: block;
         margin: auto;
