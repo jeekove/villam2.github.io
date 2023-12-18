@@ -1,29 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
-    var image1 = document.getElementById("image1");
-    var image2 = document.getElementById("image2");
-    var image3 = document.getElementById("image3");
-    var imageText1 = document.getElementById("image-text");
-    var imageText2 = document.getElementById("image-text2");
-    var imageText3 = document.getElementById("image-text3");
-    var images = [image1, image2, image3];
-    var imageTexts = [imageText1, imageText2, imageText3];
-    var currentIndex = 0;
 
-    function switchImage() {
-        images[currentIndex].style.opacity = 0;
-        imageTexts[currentIndex].style.opacity = 0;
-
-        currentIndex = (currentIndex + 1) % images.length;
-
-        images[currentIndex].style.opacity = 1;
-        imageTexts[currentIndex].style.opacity = 1;
-    }
-
-    images[currentIndex].style.opacity = 1;
-    imageTexts[currentIndex].style.opacity = 1;
-
-    setInterval(switchImage, 7000);
-});
 
 const menuButton = document.getElementById("menuButton");
 const menu = document.getElementById("menu");
@@ -37,6 +12,7 @@ menu.addEventListener("click", () => {
 });
   
 
+
 function openModal(imgSrc) {
     var modal = document.getElementById("myModal");
     var modalImg = document.getElementById("modalImg");
@@ -47,4 +23,21 @@ function openModal(imgSrc) {
   function closeModal() {
     var modal = document.getElementById("myModal");
     modal.style.display = "none";
+  }
+
+  let slideIndex = 0;
+  showSlide(slideIndex);
+
+  function changeSlide(n) {
+    showSlide(slideIndex += n);
+  }
+
+  function showSlide(n) {
+    const slides = document.getElementsByClassName("slide");
+    if (n >= slides.length) { slideIndex = 0; }
+    if (n < 0) { slideIndex = slides.length - 1; }
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slides[slideIndex].style.display = "block";
   }
