@@ -7,13 +7,14 @@
 /*
 @font-face {
     font-family: "main";
-    src: url(/fonts/main.ttf);
+    src: url(fonts/main.ttf);
 }
 @font-face {
     font-family: "titles";
-    src: url(/fonts/titles.ttf);
+    src: url(fonts/titles.ttf);
 }
 */
+/*----------------------------------------------*/
 .navbar nav{
     display: flex;
     justify-content: center;
@@ -27,15 +28,16 @@ nav img{
     margin-top: 30px;
 }
 .toptext a{
-    margin: 30px;
+    color: black;
     font-weight: bold;
+    margin: 30px;
     transition: 0.2s;
     font-size: 20px;
-    text-decoration: none;
-    color: black;
 }
 .toptext a:hover{
     color: #d52a1c;
+    scale: 0.95;
+    transition: 0.2s;
 }
 .toptext .active{
     border-bottom: 3px solid #d52a1c;
@@ -43,56 +45,47 @@ nav img{
 .mmenu{
     display: none;
 }
-.event{
-   margin: 50px auto 100px auto;
+/*-----------------------------------------------*/
+.stats{
+    width: 1300px;
+    margin: 100px auto 200px;
 }
-.events .cubeevent{
-    color: #000000;
+.titles{
     display: flex;
-    justify-content: center;
-    transition: 0.2s;
-    padding: 20px 30px;
-    margin: 20px 350px;
+    justify-content: space-between;
+    color: #d52a1c;
+    text-align: center;
+    border-bottom: 3px solid #d52a1c;
+
 }
-@media (min-width: 1100px){
-.events .cubeevent:hover{
-    scale: 0.95;
-    background-color: #d52b1c5d;
-    padding: 20px 30px;
-    border-radius: 30px;
-    cursor: pointer;
+.titles h1{
+    width: 20vw;
+    text-align: center;
+    font-size: 30px;
 }
+.titles h2{
+    width: 10vw;
+    font-size: 30px;
+    border-right: 3px solid #d52a1c;
 }
-.cubeevent:hover{
-    transition: 0.2s;
-    
+.year{
+    display: flex;
+    justify-content: space-between;
 }
-.cubeevent .etext{
-    width: 600px;
-    margin-left: 30px;
+.year h2{
+    padding: 10px 0;
+    font-size: 30px;
+    width: 10vw;
+    text-align: center;
+    border-right: 3px solid #d52a1c;
 }
-.etext h1{
-    margin: 10px 0;
+.year h1{
+    padding: 10px 0;
+    font-size: 30px;
+    width: 20vw;
+    text-align: center;
 }
-.etext span{
-    color: rgb(97, 97, 97);
-    font-size: 20px;
-}
-.etext p{
-    font-size: 20px;
-}
-.cubeevent img{
-    height: auto;
-    width: 350px;
-    border-radius: 20px;
-}
-.divider{
-    flex-grow: 1;
-    height: 2px;
-    background-color: #ccc;
-    width: 700px;
-    margin: auto;
-}
+/*-----------------------------------------------*/
 .bottom{
     background: linear-gradient(45deg , #d52a1c,#0d3a54 );
     color: aliceblue;
@@ -105,7 +98,7 @@ nav img{
     margin-bottom: 50px;
 }
 .bottom .infos{
-    width: 500px;
+    width: 400px;
     margin-right: 800px;
 }
 .bottom .infos h1{
@@ -124,31 +117,33 @@ nav img{
 .bottom .social i{
     text-decoration: none;
     color: aliceblue;
-    transition: 0.3s;
-}
-.bottom .social i:hover{
-    color: rgb(151, 0, 0);
-    transition: 0.3s;
 }
 .bottom p{
     text-align: center;
     padding: 10px 0;
 }
-@media (max-width: 1500px){
+
+/*-------------------------------------------------------*/
+@media (max-width: 1500px) {
     .toptext a{
-        margin: 20px
+        margin: 20px;
+        font-size: 17px;
     }
-    .events .cubeevent{
-        padding: 20px 30px;
-        margin: 20px 150px;
-    }
+    nav img{
+        margin-top: 20px;
+        width: 47px;
+        height: auto;
+    }   
+
     .bottom .infos{
         margin-right: 630px;
     }
+    .stats{
+        width: 1000px;
+    }
 }
-
-
-@media (max-width: 1100px) {
+    
+@media (max-width: 950px) {
     .navbar .toptext{
         display: none;
     }
@@ -156,14 +151,13 @@ nav img{
         width: 45px;
         height: 35px;
     }
-
     .mmenu {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 10px 20px;
         position: absolute;
-        top: 10px;
+        top: 15px;
         left: 15px;
     }
     
@@ -177,7 +171,7 @@ nav img{
         background-color: #000000;
         margin: 4px 0;
         transition: 0.4s;
-        z-index: 3;
+        z-index: 1;
     }
     
     .menu {
@@ -218,49 +212,45 @@ nav img{
         font-size: 18px;
     }
     .menu .mactive{
-        border-bottom: 3px solid #d52a1c;
+        border-bottom: 2px solid #d52a1c;
     }
-    .events .cubeevent{
-        margin: auto;
-        display: block;
+    .stats{
+        width: 95%;
+        height: 60vh;
     }
-    .cubeevent img{
-        border-radius: 15px;
-        height: auto;
-        width: 300px;
-        display: block;
-        margin: auto; 
+    .titles{
+        border-bottom: 2px solid #d52a1c;
     }
-    .cubeevent .etext{
+    .titles h1{
+        width: 20vw;
         text-align: center;
-        margin: auto;
-        width: 300px; 
+        font-size: 18px;
     }
-    .etext h1{
-        font-size: 20px;
-        width: 300px;
+    .titles h2{
+        width: 12vw;
+        font-size: 19px;
+        border-right: 2px solid #d52a1c;
     }
-    .etext span{
-        font-size: 15px;
+    .year h2{
+        padding: 10px 0;
+        font-size: 16px;
+        width: 12vw;
+        text-align: center;
+        border-right: 2px solid #d52a1c;
     }
-    .etext p{
-        font-size: 15px;
-        width: 300px;
-    }
-    .divider{
-        flex-grow: 1;
-        height: 2px;
-        background-color: #ccc;
-        width: 320px;
-        margin: auto;
+    .year h1{
+        padding: 10px 0;
+        font-size: 18px;
+        width: 20vw;
+        text-align: center;
     }
     .bottom .mbot{
         display: block;
         margin: auto;
-    }
+     }
      .bottom .infos{
         width: 250px;
-        margin-left: 15px;
+        margin-left: 6vw;
     }
     .bottom .infos h1{
         font-size: 25px;
@@ -281,4 +271,5 @@ nav img{
     .bottom p{
         font-size: 12px;
     }
+    
 }

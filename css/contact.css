@@ -36,11 +36,11 @@ nav img{
     color: black;
 }
 .toptext a:hover{
-    border-bottom: 3px solid red;
-    color: red;
+    color: #d52a1c;
+    transition: 0.2s;
 }
 .toptext .active{
-    border-bottom: 3px solid red;
+    border-bottom: 3px solid #d52a1c;
 }
 .mmenu{
     display: none;
@@ -52,7 +52,7 @@ nav img{
     height: 90vh;
 }
 .contactcont .cinfo{
-    background: linear-gradient( to right , #0d3a54, red );
+    background: linear-gradient( to right , #0d3a54, #d52a1c);
     height: 70vh;
     width: 30vw;
     border-top-left-radius: 20px;
@@ -173,7 +173,7 @@ nav img{
         font-size: 18px;
     }
     .menu .mactive{
-        border-bottom: 3px solid red;
+        border-bottom: 3px solid #d52a1c;
     }
     .contactcont .contcube{
         margin-top: 10vh;
