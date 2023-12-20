@@ -184,13 +184,13 @@ nav img{
     top: -7px;
     color: aliceblue;
     font-size: 20px;
-    background-color: rgb(255, 0, 0);
+    background-color: #d52a1c;
     padding: 8px 10px 8px 5px;
     border-radius: 20px
 }
 .stats h1 i{
     font-size: 20px;
-    color: red;
+    color: #d52a1c;
     padding: 5px 13px;
     border-radius: 100%;
     background-color: aliceblue;
@@ -440,7 +440,6 @@ nav img{
 }
 
 /*-------------------------------------------------------*/
-
 @media (max-width: 950px) {
     .navbar .toptext{
         display: none;
@@ -510,7 +509,7 @@ nav img{
         font-size: 18px;
     }
     .menu .mactive{
-        border-bottom: 3px solid red;
+        border-bottom: 3px solid #d52a1c;
     }
     #gallery {
         height: 600px;
@@ -593,7 +592,7 @@ nav img{
     }
     .aboutus h1{
         font-size: 30px;
-        border-bottom: 4px solid red;
+        border-bottom: 4px solid #d52a1c;
     }
     .aboutus h2{
         font-size: 16px;
@@ -603,12 +602,12 @@ nav img{
     }
     .stats h1{
         font-size: 30px;
-        border-bottom: 4px solid red;
+        border-bottom: 4px solid #d52a1c;
     }
     .stats h1 span{
         top: -4px;
         font-size: 15px;
-        background-color: red;
+        background-color: #d52a1c;
         padding: 5px 6px 5px 2px;
         border-radius: 20px
     }
@@ -622,7 +621,7 @@ nav img{
     .stats .counts div{
         height: 150px;
         width: 150px;
-        border: solid 6px  red;
+        border: solid 6px  #d52a1c;
         margin: 30px auto;
     }
     .stats div h1{
@@ -638,7 +637,7 @@ nav img{
     }
     .new h1{
         font-size: 30px;
-        border-bottom: 4px solid red;
+        border-bottom: 4px solid #d52a1c;
     }
     .moduls{
         display: block;
